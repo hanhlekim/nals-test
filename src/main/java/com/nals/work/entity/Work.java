@@ -38,7 +38,7 @@ public class Work implements Serializable {
     @Column(name = "end_date")
     private LocalDate endDate;
 
-    @ManyToOne(cascade=  CascadeType.PERSIST, fetch= FetchType.EAGER)
+    @ManyToOne(fetch= FetchType.EAGER)
     @JoinColumn(name = "status", referencedColumnName = "id")
     private Status status;
 }

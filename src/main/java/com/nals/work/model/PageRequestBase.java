@@ -28,5 +28,5 @@ public class PageRequestBase {
     /**
      * The sort order
      */
-    private String sortOrder = "ASC";
+    private String sortOrder;
 }
